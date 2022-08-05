@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ACYZen.Data;
+using ApplicationDbContext = ACYZen.Areas.Identity.Data.ApplicationDbContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
