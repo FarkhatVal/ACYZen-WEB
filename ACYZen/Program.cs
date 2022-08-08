@@ -1,3 +1,4 @@
+using ACYZen;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ACYZen.Data;
@@ -40,3 +41,10 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+IHostBuilder CreateHostBuilder(string[] args) =>
+    Host.CreateDefaultBuilder(args)
+        .ConfigureWebHostDefaults(webBuilder =>
+        {
+            webBuilder.UseStartup<Startup>();
+        });
